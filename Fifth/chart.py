@@ -85,8 +85,8 @@ plt.tight_layout()
 plt.figtext(0.5, 0.01, "© Armstrong Oberbrunner and Okuneva | Data-Driven Customer Experience Analytics", 
            ha="center", fontsize=10, fontstyle='italic')
 
-# Save the plot with exact dimensions (8 inches * 64 dpi = 512 pixels)
-plt.savefig('/workspaces/Week7/Fifth/chart.png', dpi=64, bbox_inches='tight')
+# Save the plot with exact dimensions 512x512
+plt.savefig('/workspaces/Week7/Fifth/chart.png', dpi=64, bbox_inches=None)
 
 print("Customer Engagement Correlation Matrix has been generated successfully.")
 print("Chart saved as chart.png with dimensions 512x512 pixels.")
