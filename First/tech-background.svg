@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2a5298;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4f4f99;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="circuit" patternUnits="userSpaceOnUse" width="40" height="40">
+      <rect width="40" height="40" fill="none"/>
+      <circle cx="20" cy="20" r="2" fill="#00ff88" opacity="0.3"/>
+      <line x1="0" y1="20" x2="40" y2="20" stroke="#00ff88" stroke-width="1" opacity="0.2"/>
+      <line x1="20" y1="0" x2="20" y2="40" stroke="#00ff88" stroke-width="1" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#techGrad)"/>
+  <rect width="1200" height="800" fill="url(#circuit)"/>
+  <g opacity="0.1">
+    <polygon points="100,100 200,150 150,250 50,200" fill="#ffffff"/>
+    <polygon points="1000,200 1100,250 1050,350 950,300" fill="#ffffff"/>
+    <polygon points="300,600 400,650 350,750 250,700" fill="#ffffff"/>
+    <polygon points="800,500 900,550 850,650 750,600" fill="#ffffff"/>
+  </g>
+  <text x="600" y="400" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" opacity="0.1">DOCUMENTATION</text>
+</svg>

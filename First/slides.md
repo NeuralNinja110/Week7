@@ -22,10 +22,21 @@ style: |
   }
   
   section.background-image {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNGY0Zjk5O3N0b3Atb3BhY2l0eToxIiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzJhMmE3MztzdG9wLW9wYWNpdHk6MSIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjZ3JhZCkiLz48L3N2Zz4=');
+    background-image: url('./tech-background.svg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  }
+  
+  section.data-center {
+    background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
   }
   
   h1 {
@@ -142,6 +153,7 @@ Technical documentation is comprehensive information that describes how to use, 
 ---
 
 <!-- _class: background-image -->
+<!-- This slide uses a custom SVG background image -->
 
 ## Marp: The Future of Presentations
 
@@ -180,6 +192,25 @@ $$f(n) = O(g(n)) \text{ if } \exists c > 0, n_0 \text{ such that } f(n) \leq c \
 ### Performance Metrics
 - **Latency**: $L = \sum_{i=1}^{n} t_i$
 - **Throughput**: $T = \frac{requests}{time}$
+
+---
+
+<!-- _class: data-center -->
+
+## Modern Infrastructure
+
+### Cloud-Native Documentation Systems
+
+**Key Components:**
+- **Distributed Storage**: Document repositories across multiple data centers
+- **Edge Caching**: Fast content delivery worldwide
+- **Auto-scaling**: Handle traffic spikes automatically
+- **Monitoring**: Real-time performance analytics
+
+**Benefits:**
+- 99.9% uptime guarantee
+- Global accessibility
+- Seamless collaboration
 
 ---
 
