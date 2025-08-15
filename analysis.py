@@ -181,8 +181,21 @@ def __(filtered_df):
     return mo.ui.plotly(fig)
 
 
+def __():
+    # Cell 7: Simple Interactive Widget Demo
+    # This cell demonstrates a basic slider with dynamic emoji output
+    # No dependencies - standalone interactive example
+    
+    # Add interactive widgets
+    slider = mo.ui.slider(1, 100)
+    
+    # Create dynamic Markdown
+    mo.md(f"{slider} {'🟢' * slider.value}")
+    return slider,
+
+
 def __(df):
-    # Cell 7: Data Flow Documentation
+    # Cell 8: Data Flow Documentation
     # This cell documents the data flow and dependencies between cells
     # Depends on: df from Cell 2 (for data description)
     
@@ -199,7 +212,8 @@ def __(df):
         4. **Data Filtering Cell** → Depends on `df` and `temp_range_slider`
         5. **Dynamic Markdown Cell** → Depends on `filtered_df`, `stats`, and `temp_range_slider`
         6. **Visualization Cell** → Depends on `filtered_df`
-        7. **Documentation Cell** → Depends on `df` for metadata
+        7. **Simple Widget Demo** → No dependencies (standalone interactive example)
+        8. **Documentation Cell** → Depends on `df` for metadata
         
         ### Variable Flow:
         ```
@@ -216,6 +230,7 @@ def __(df):
         - **Temperature Range Slider**: Filters data in real-time
         - **Dynamic Statistics**: Updates automatically with filter changes
         - **Interactive Plot**: Responsive scatter plot with trend line
+        - **Simple Widget Demo**: Basic slider with emoji visualization
         - **Contextual Documentation**: Adapts explanations to current data state
         
         This reactive programming model ensures all dependent cells update automatically
