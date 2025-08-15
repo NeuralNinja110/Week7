@@ -1,0 +1,319 @@
+---
+marp: true
+theme: custom-tech
+paginate: true
+backgroundColor: '#1a1a1a'
+color: '#ffffff'
+header: 'Technical Documentation Presentation'
+footer: '23f1001177@ds.study.iitm.ac.in'
+style: |
+  /* Custom Theme Specification */
+  section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    padding: 60px;
+  }
+  
+  section.title {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    text-align: center;
+    justify-content: center;
+  }
+  
+  section.background-image {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNGY0Zjk5O3N0b3Atb3BhY2l0eToxIiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzJhMmE3MztzdG9wLW9wYWNpdHk6MSIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjZ3JhZCkiLz48L3N2Zz4=');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  h2 {
+    font-size: 2.2em;
+    margin-bottom: 0.8em;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.8em;
+    color: #ffeb3b;
+    margin-bottom: 0.6em;
+  }
+  
+  .highlight {
+    background-color: #ff5722;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .code-block {
+    background-color: #2d2d2d;
+    border-left: 4px solid #4caf50;
+    padding: 15px;
+    margin: 20px 0;
+    font-family: 'Courier New', monospace;
+    border-radius: 5px;
+  }
+  
+  .math-container {
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .feature-list {
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .feature-list li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .feature-list li::before {
+    content: '✓';
+    color: #4caf50;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+---
+
+<!-- _class: title -->
+<!-- _paginate: false -->
+
+# Technical Documentation Presentation
+
+## Creating Maintainable Documentation with Marp
+
+### Software Documentation Best Practices
+
+**Author:** 23f1001177@ds.study.iitm.ac.in
+**Date:** August 15, 2025
+
+---
+
+## Table of Contents
+
+1. **Introduction to Technical Documentation**
+2. **Marp: Markdown Presentation Ecosystem**
+3. **Version Control Integration**
+4. **Mathematical Documentation**
+5. **Styling and Customization**
+6. **Best Practices & Deployment**
+
+---
+
+## What is Technical Documentation?
+
+### Definition
+Technical documentation is comprehensive information that describes how to use, maintain, or troubleshoot a product or system.
+
+<div class="feature-list">
+
+- **User Guides**: Step-by-step instructions
+- **API Documentation**: Interface specifications
+- **Architecture Docs**: System design explanations
+- **Troubleshooting**: Problem-solving guides
+- **Code Comments**: Inline explanations
+
+</div>
+
+### Key Benefits
+- Reduces support burden
+- Improves developer experience
+- Ensures knowledge preservation
+
+---
+
+<!-- _class: background-image -->
+
+## Marp: The Future of Presentations
+
+### Why Choose Marp?
+
+<div class="highlight">Markdown + Presentation = Marp</div>
+
+**Advantages:**
+- **Version Control Friendly**: Plain text format
+- **Maintainable**: Easy to update and modify
+- **Flexible**: Multiple output formats (HTML, PDF, PPTX)
+- **Customizable**: Full CSS control
+- **Collaborative**: Works with Git workflows
+
+---
+
+## Mathematical Documentation
+
+### Algorithmic Complexity Analysis
+
+When documenting algorithms, we often need to express mathematical concepts:
+
+<div class="math-container">
+
+**Time Complexity of Binary Search:**
+$$T(n) = O(\log n)$$
+
+**Space Complexity of Merge Sort:**
+$$S(n) = O(n)$$
+
+**Big O Notation:**
+$$f(n) = O(g(n)) \text{ if } \exists c > 0, n_0 \text{ such that } f(n) \leq c \cdot g(n) \text{ for all } n \geq n_0$$
+
+</div>
+
+### Performance Metrics
+- **Latency**: $L = \sum_{i=1}^{n} t_i$
+- **Throughput**: $T = \frac{requests}{time}$
+
+---
+
+## Custom Styling with Marp Directives
+
+### Available Directives
+
+<div class="code-block">
+
+```markdown
+---
+marp: true
+theme: custom-tech
+paginate: true
+backgroundColor: '#1a1a1a'
+color: '#ffffff'
+header: 'Technical Documentation'
+footer: 'your-email@company.com'
+---
+```
+
+</div>
+
+### CSS Customization
+- **Themes**: Custom CSS styling
+- **Layouts**: Flexible grid systems
+- **Animations**: Smooth transitions
+- **Responsive**: Mobile-friendly designs
+
+---
+
+## Version Control Integration
+
+### Git Workflow for Documentation
+
+<div class="feature-list">
+
+- **Branching Strategy**: Feature branches for doc updates
+- **Code Reviews**: Peer review for accuracy
+- **CI/CD Integration**: Automated builds and deployments
+- **Change Tracking**: Detailed commit history
+- **Collaborative Editing**: Multiple contributors
+
+</div>
+
+### Markdown Benefits
+```bash
+# Easy diffing
+git diff docs/api.md
+
+# Blame tracking
+git blame presentation.md
+
+# History viewing
+git log --oneline slides.md
+```
+
+---
+
+## Export Formats & Deployment
+
+### Multiple Output Options
+
+| Format | Use Case | Command |
+|--------|----------|---------|
+| **HTML** | Web hosting | `marp slides.md` |
+| **PDF** | Print/share | `marp slides.md --pdf` |
+| **PPTX** | PowerPoint | `marp slides.md --pptx` |
+| **PNG** | Images | `marp slides.md --images` |
+
+### Deployment Strategies
+- **GitHub Pages**: Automatic hosting
+- **Netlify**: Continuous deployment
+- **CDN**: Global distribution
+- **Docker**: Containerized delivery
+
+---
+
+## Best Practices
+
+### Documentation Principles
+
+<div class="feature-list">
+
+- **Clear Structure**: Logical organization
+- **Consistent Formatting**: Standard templates
+- **Regular Updates**: Keep content current
+- **User-Focused**: Address real needs
+- **Searchable**: Good navigation and indexing
+- **Accessible**: Consider all users
+
+</div>
+
+### Maintenance Tips
+1. **Review Cycle**: Quarterly documentation audits
+2. **Feedback Loop**: User input integration
+3. **Automation**: Auto-generated content where possible
+4. **Metrics**: Track usage and effectiveness
+
+---
+
+## Conclusion
+
+### Key Takeaways
+
+**Marp enables maintainable, version-controlled presentations that:**
+
+- Integrate seamlessly with development workflows
+- Support complex mathematical expressions
+- Offer extensive customization options
+- Export to multiple formats
+- Scale with team collaboration needs
+
+### Next Steps
+1. Set up Marp in your project
+2. Create documentation templates
+3. Establish review processes
+4. Implement CI/CD pipelines
+
+---
+
+<!-- _class: title -->
+<!-- _paginate: false -->
+
+# Thank You!
+
+## Questions & Discussion
+
+**Contact Information:**
+📧 23f1001177@ds.study.iitm.ac.in
+
+**Resources:**
+- Marp Documentation: https://marp.app/
+- GitHub Repository: https://github.com/marp-team/marp
+- Best Practices Guide: Internal wiki
+
+*"Good documentation is like a love letter to your future self"*
