@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Quarterly Earnings Report - Q3 2025</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/monokai.css">
+
+		<!-- Custom styles for financial presentation -->
+		<style>
+			.reveal .slides section {
+				text-align: left;
+			}
+			.reveal h1, .reveal h2, .reveal h3 {
+				color: #1f497d;
+				text-align: center;
+			}
+			.financial-metric {
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				color: white;
+				padding: 20px;
+				border-radius: 10px;
+				margin: 10px 0;
+				text-align: center;
+			}
+			.metric-value {
+				font-size: 2.5em;
+				font-weight: bold;
+			}
+			.metric-label {
+				font-size: 1.2em;
+				opacity: 0.9;
+			}
+			.contact-info {
+				background: #f8f9fa;
+				padding: 15px;
+				border-left: 4px solid #1f497d;
+				margin: 20px 0;
+			}
+			.highlight {
+				background: #ffeb3b;
+				padding: 2px 5px;
+				border-radius: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Title Slide -->
+				<section>
+					<h1>Quarterly Earnings Report</h1>
+					<h3>Q3 2025 Financial Performance</h3>
+					<div class="contact-info">
+						<p><strong>Prepared by:</strong> Technical Consultant</p>
+						<p><strong>Email:</strong> 23f1001177@ds.study.iitm.ac.in</p>
+						<p><strong>Date:</strong> August 15, 2025</p>
+					</div>
+					<aside class="notes">
+						Welcome to our Q3 2025 earnings presentation. This report covers our financial performance, 
+						key metrics, and strategic outlook. We'll discuss revenue growth, profitability improvements, 
+						and our technology investments that are driving value creation.
+					</aside>
+				</section>
+
+				<!-- Executive Summary - Markdown Content -->
+				<section data-markdown>
+					<textarea data-template>
+						## Executive Summary
+
+						### Key Highlights Q3 2025
+
+						- **Revenue Growth**: 15.2% year-over-year increase
+						- **Digital Transformation**: Successfully migrated 78% of operations to cloud
+						- **Customer Satisfaction**: Improved NPS score by 12 points
+						- **Risk Management**: Enhanced compliance framework implementation
+
+						> *"Our strategic focus on technology modernization continues to deliver exceptional results for our stakeholders."*
+
+						---
+
+						### Market Position
+
+						| Metric | Q2 2025 | Q3 2025 | Change |
+						|--------|---------|---------|--------|
+						| Market Share | 23.4% | 25.1% | +1.7% |
+						| Customer Base | 2.1M | 2.3M | +9.5% |
+						| Digital Adoption | 65% | 78% | +13% |
+					</textarea>
+					<aside class="notes">
+						The executive summary shows strong performance across all key metrics. 
+						Our digital transformation initiative is ahead of schedule and contributing 
+						significantly to operational efficiency. The market share growth reflects 
+						our competitive positioning in the financial services sector.
+					</aside>
+				</section>
+
+				<!-- Financial Performance with Animations -->
+				<section>
+					<h2>Financial Performance Overview</h2>
+					
+					<div class="financial-metric fragment fade-in-then-semi-out">
+						<div class="metric-value">$2.4B</div>
+						<div class="metric-label">Total Revenue</div>
+					</div>
+
+					<div class="financial-metric fragment fade-in-then-semi-out">
+						<div class="metric-value">18.7%</div>
+						<div class="metric-label">Net Profit Margin</div>
+					</div>
+
+					<div class="financial-metric fragment fade-in">
+						<div class="metric-value">$847M</div>
+						<div class="metric-label">Operating Income</div>
+					</div>
+
+					<p class="fragment highlight-red">
+						<span class="highlight">Record-breaking quarter</span> with significant improvements in operational efficiency
+					</p>
+
+					<aside class="notes">
+						Our Q3 results demonstrate the strength of our business model. Revenue growth 
+						was driven by both organic growth and strategic acquisitions. The profit margin 
+						improvement reflects our cost optimization initiatives and technology investments 
+						paying dividends.
+					</aside>
+				</section>
+
+				<!-- Technology Investment Code Sample -->
+				<section>
+					<h2>Technology Infrastructure Investment</h2>
+					<p>Our automated risk assessment system implementation:</p>
+					
+					<pre><code class="python" data-trim data-noescape>
+# Risk Assessment Algorithm Implementation
+import numpy as np
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+
+class RiskAssessmentEngine:
+    def __init__(self):
+        self.model = RandomForestClassifier(n_estimators=100, random_state=42)
+        self.risk_thresholds = {
+            'low': 0.3,
+            'medium': 0.7,
+            'high': 1.0
+        }
+    
+    def calculate_portfolio_risk(self, portfolio_data):
+        """
+        Calculate risk score for investment portfolio
+        Returns: Risk score between 0-1
+        """
+        features = self.extract_features(portfolio_data)
+        risk_probability = self.model.predict_proba(features)[:, 1]
+        
+        return {
+            'risk_score': float(risk_probability[0]),
+            'risk_category': self.categorize_risk(risk_probability[0]),
+            'confidence': self.model.score(features, [1])
+        }
+    
+    def categorize_risk(self, score):
+        """Categorize risk based on thresholds"""
+        if score <= self.risk_thresholds['low']:
+            return 'LOW_RISK'
+        elif score <= self.risk_thresholds['medium']:
+            return 'MEDIUM_RISK'
+        else:
+            return 'HIGH_RISK'
+					</code></pre>
+
+					<aside class="notes">
+						This code sample shows our new automated risk assessment system. It uses 
+						machine learning to evaluate portfolio risk in real-time, improving our 
+						decision-making speed by 40% while maintaining accuracy. The system has 
+						processed over 10,000 assessments this quarter.
+					</aside>
+				</section>
+
+				<!-- Financial Formulas with Mathematical Equations -->
+				<section>
+					<h2>Key Financial Metrics & Formulas</h2>
+					
+					<div class="fragment fade-in">
+						<h3>Return on Investment (ROI)</h3>
+						<p>$$ROI = \frac{\text{Net Profit}}{\text{Total Investment}} \times 100\%$$</p>
+						<p><strong>Q3 2025 ROI:</strong> 24.3%</p>
+					</div>
+
+					<div class="fragment fade-in">
+						<h3>Sharpe Ratio (Risk-Adjusted Returns)</h3>
+						<p>$$\text{Sharpe Ratio} = \frac{R_p - R_f}{\sigma_p}$$</p>
+						<p>Where: $R_p$ = Portfolio Return, $R_f$ = Risk-free Rate, $\sigma_p$ = Portfolio Standard Deviation</p>
+						<p><strong>Current Sharpe Ratio:</strong> 1.87</p>
+					</div>
+
+					<div class="fragment fade-in">
+						<h3>Economic Value Added (EVA)</h3>
+						<p>$$EVA = NOPAT - (WACC \times \text{Invested Capital})$$</p>
+						<p><strong>Q3 EVA:</strong> $156M (15% increase from Q2)</p>
+					</div>
+
+					<aside class="notes">
+						These financial metrics show our strong performance relative to industry benchmarks. 
+						Our ROI exceeds the industry average by 8 percentage points. The Sharpe ratio 
+						indicates excellent risk-adjusted returns, and our positive EVA demonstrates 
+						value creation for shareholders.
+					</aside>
+				</section>
+
+				<!-- Market Analysis -->
+				<section>
+					<h2>Market Analysis & Competitive Position</h2>
+					
+					<div class="fragment fade-in-then-out">
+						<h3>Market Trends</h3>
+						<ul>
+							<li>Digital banking adoption increased 23% industry-wide</li>
+							<li>Regulatory compliance costs up 8%</li>
+							<li>Cybersecurity investments averaged 12% of IT budgets</li>
+						</ul>
+					</div>
+
+					<div class="fragment fade-in">
+						<h3>Our Competitive Advantages</h3>
+						<ul class="fragment">
+							<li class="fragment highlight-current-blue">Advanced AI-driven customer service (98.2% satisfaction)</li>
+							<li class="fragment highlight-current-blue">Proprietary risk management algorithms</li>
+							<li class="fragment highlight-current-blue">Industry-leading mobile platform (4.8/5 rating)</li>
+							<li class="fragment highlight-current-blue">Comprehensive ESG framework implementation</li>
+						</ul>
+					</div>
+
+					<aside class="notes">
+						Our competitive analysis shows we're outperforming in key areas. Our digital 
+						transformation is 18 months ahead of competitors. The AI-driven customer service 
+						has reduced response times by 65% while improving satisfaction scores. Our ESG 
+						initiatives are attracting millennial and Gen-Z customers.
+					</aside>
+				</section>
+
+				<!-- Risk Management Dashboard Code -->
+				<section>
+					<h2>Real-Time Risk Dashboard Implementation</h2>
+					<p>JavaScript code powering our executive dashboard:</p>
+					
+					<pre><code class="javascript" data-trim data-noescape>
+// Real-time Risk Monitoring Dashboard
+class RiskDashboard {
+    constructor(containerId) {
+        this.container = document.getElementById(containerId);
+        this.websocket = new WebSocket('wss://risk-api.company.com/live');
+        this.chartConfig = {
+            type: 'line',
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Portfolio Risk Score - Real Time'
+                    }
+                }
+            }
+        };
+        this.initializeComponents();
+    }
+
+    initializeComponents() {
+        this.websocket.onmessage = (event) => {
+            const riskData = JSON.parse(event.data);
+            this.updateRiskMetrics(riskData);
+            this.triggerAlerts(riskData);
+        };
+    }
+
+    updateRiskMetrics(data) {
+        // Update risk score visualization
+        const riskScore = data.overall_risk_score;
+        const riskLevel = this.calculateRiskLevel(riskScore);
+        
+        document.getElementById('risk-score').textContent = riskScore.toFixed(2);
+        document.getElementById('risk-level').className = `risk-${riskLevel}`;
+        
+        // Update portfolio exposure charts
+        this.updateExposureCharts(data.sector_exposure);
+    }
+
+    triggerAlerts(data) {
+        if (data.overall_risk_score > 75) {
+            this.showAlert('HIGH_RISK', 'Portfolio risk exceeds threshold');
+        }
+    }
+}
+
+// Initialize dashboard
+const dashboard = new RiskDashboard('risk-container');
+					</code></pre>
+
+					<aside class="notes">
+						This dashboard provides real-time risk monitoring across our entire portfolio. 
+						It processes over 1,000 data points per second and can detect emerging risks 
+						within minutes. The system has prevented 3 major risk events this quarter, 
+						saving an estimated $45M in potential losses.
+					</aside>
+				</section>
+
+				<!-- Strategic Outlook -->
+				<section>
+					<h2>Strategic Outlook</h2>
+					
+					<div class="fragment fade-in">
+						<h3>Q4 2025 Priorities</h3>
+						<ul>
+							<li class="fragment">Complete cloud migration (target: 95%)</li>
+							<li class="fragment">Launch AI-powered investment advisory platform</li>
+							<li class="fragment">Expand into sustainable finance products</li>
+							<li class="fragment">Strengthen cybersecurity infrastructure</li>
+						</ul>
+					</div>
+
+					<div class="fragment fade-in">
+						<h3>2026 Vision</h3>
+						<p class="fragment">Become the leading digital-first financial institution with:</p>
+						<ul>
+							<li class="fragment">30% market share in digital banking</li>
+							<li class="fragment">$3.5B annual revenue target</li>
+							<li class="fragment">Industry-leading ESG scores</li>
+						</ul>
+					</div>
+
+					<aside class="notes">
+						Our strategic roadmap focuses on three pillars: technology excellence, 
+						customer centricity, and sustainable growth. The Q4 initiatives will 
+						position us for accelerated growth in 2026. Our investment in AI and 
+						machine learning is expected to generate $200M in additional revenue next year.
+					</aside>
+				</section>
+
+				<!-- Contact & Questions -->
+				<section>
+					<h2>Thank You</h2>
+					<h3>Questions & Discussion</h3>
+					
+					<div class="contact-info">
+						<p><strong>Technical Consultant</strong></p>
+						<p><strong>Email:</strong> 23f1001177@ds.study.iitm.ac.in</p>
+						<p><strong>Follow-up:</strong> Detailed reports available via investor portal</p>
+					</div>
+
+					<div class="fragment fade-in">
+						<p><em>This presentation demonstrates our commitment to transparency and stakeholder engagement through modern presentation technologies.</em></p>
+					</div>
+
+					<aside class="notes">
+						Thank you for your attention. This concludes our Q3 2025 earnings presentation. 
+						I'm available for questions about our financial performance, technology initiatives, 
+						or strategic direction. Detailed financial statements and supplementary materials 
+						are available on our investor portal.
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<!-- Include RevealJS and plugins -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/math/math.js"></script>
+
+		<script>
+			// Initialize RevealJS
+			Reveal.initialize({
+				hash: true,
+				transition: 'slide',
+				transitionSpeed: 'default',
+				backgroundTransition: 'fade',
+				
+				// Enable plugins
+				plugins: [ 
+					RevealMarkdown, 
+					RevealHighlight, 
+					RevealNotes,
+					RevealMath.KaTeX
+				],
+
+				// Math plugin configuration
+				math: {
+					mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: "\\mathbb{R}",
+							set: [ "\\left\\{#1 \\; ; \\; #2\\right\\}", 2 ]
+						}
+					}
+				},
+
+				// Presentation controls
+				controls: true,
+				progress: true,
+				center: true,
+				touch: true,
+				loop: false,
+				rtl: false,
+				shuffle: false,
+				fragments: true,
+				help: true,
+				showNotes: false,
+				autoSlide: 0,
+				autoSlideStoppable: true,
+				mouseWheel: false,
+				hideAddressBar: true,
+				previewLinks: false,
+				viewDistance: 3,
+				display: 'block'
+			});
+		</script>
+	</body>
+</html>
