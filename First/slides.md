@@ -39,6 +39,15 @@ style: |
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
   }
   
+  section.custom-image {
+    background-image: url('./images.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+  }
+  
   h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
@@ -105,7 +114,7 @@ style: |
   }
 ---
 
-<!-- _class: title -->
+<!-- _class: title custom-image -->
 <!-- _paginate: false -->
 
 # Technical Documentation Presentation
@@ -118,6 +127,8 @@ style: |
 **Date:** August 15, 2025
 
 ---
+
+<!-- _class: custom-image -->
 
 ## Table of Contents
 
