@@ -114,8 +114,9 @@ style: |
   }
 ---
 
-<!-- _class: title custom-image -->
+<!-- _class: title -->
 <!-- _paginate: false -->
+![bg cover](background.jpg)
 
 # Technical Documentation Presentation
 
@@ -128,7 +129,7 @@ style: |
 
 ---
 
-<!-- _class: custom-image -->
+![bg right:40%](background.jpg)
 
 ## Table of Contents
 
@@ -140,6 +141,8 @@ style: |
 6. **Best Practices & Deployment**
 
 ---
+
+![bg left:30% opacity:0.8](background.jpg)
 
 ## What is Technical Documentation?
 
@@ -163,8 +166,7 @@ Technical documentation is comprehensive information that describes how to use, 
 
 ---
 
-<!-- _class: background-image -->
-<!-- This slide uses a custom SVG background image -->
+![bg](background.jpg)
 
 ## Marp: The Future of Presentations
 
@@ -180,6 +182,8 @@ Technical documentation is comprehensive information that describes how to use, 
 - **Collaborative**: Works with Git workflows
 
 ---
+
+![bg vertical](background.jpg)
 
 ## Mathematical Documentation
 
@@ -206,7 +210,7 @@ $$f(n) = O(g(n)) \text{ if } \exists c > 0, n_0 \text{ such that } f(n) \leq c \
 
 ---
 
-<!-- _class: data-center -->
+![bg fit](background.jpg)
 
 ## Modern Infrastructure
 
@@ -224,6 +228,8 @@ $$f(n) = O(g(n)) \text{ if } \exists c > 0, n_0 \text{ such that } f(n) \leq c \
 - Seamless collaboration
 
 ---
+
+![bg right:40%](background.jpg)
 
 ## Custom Styling with Marp Directives
 
@@ -253,6 +259,8 @@ footer: 'your-email@company.com'
 
 ---
 
+![bg left:40%](background.jpg)
+
 ## Version Control Integration
 
 ### Git Workflow for Documentation
@@ -281,6 +289,8 @@ git log --oneline slides.md
 
 ---
 
+![bg right:30%](background.jpg)
+
 ## Export Formats & Deployment
 
 ### Multiple Output Options
@@ -299,6 +309,8 @@ git log --oneline slides.md
 - **Docker**: Containerized delivery
 
 ---
+
+![bg left:40%](background.jpg)
 
 ## Best Practices
 
@@ -322,6 +334,8 @@ git log --oneline slides.md
 4. **Metrics**: Track usage and effectiveness
 
 ---
+
+![bg right:40%](background.jpg)
 
 ## Conclusion
 
