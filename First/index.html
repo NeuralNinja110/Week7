@@ -148,7 +148,7 @@
 					<h2>Technology Infrastructure Investment</h2>
 					<p>Our automated risk assessment system implementation:</p>
 					
-					<pre><code class="python" data-trim data-noescape>
+					<pre><code class="python" data-trim data-noescape data-line-numbers="1-4|6-13|15-25|27-35">
 # Risk Assessment Algorithm Implementation
 import numpy as np
 import pandas as pd
@@ -262,7 +262,7 @@ class RiskAssessmentEngine:
 					<h2>Real-Time Risk Dashboard Implementation</h2>
 					<p>JavaScript code powering our executive dashboard:</p>
 					
-					<pre><code class="javascript" data-trim data-noescape>
+					<pre><code class="javascript" data-trim data-noescape data-line-numbers="1-2|3-25|27-34|36-48|50-56|58-59">
 // Real-time Risk Monitoring Dashboard
 class RiskDashboard {
     constructor(containerId) {
@@ -328,6 +328,39 @@ const dashboard = new RiskDashboard('risk-container');
 					</aside>
 				</section>
 
+				<!-- Revenue Analysis SQL Query -->
+				<section>
+					<h2>Quarterly Revenue Analysis</h2>
+					<p>SQL query used for revenue analysis:</p>
+					
+					<pre><code class="sql" data-trim data-noescape data-line-numbers="1-2|4-9|11-13|15-18">
+-- Quarterly revenue analysis query
+SELECT
+    EXTRACT(QUARTER FROM transaction_date) AS quarter,
+    product_category,
+    SUM(amount) AS total_revenue,
+    COUNT(DISTINCT customer_id) AS unique_customers,
+    SUM(amount) / COUNT(DISTINCT customer_id) AS revenue_per_customer
+FROM
+    transactions
+WHERE
+    transaction_date BETWEEN '2023-01-01' AND '2023-12-31'
+    AND status = 'completed'
+GROUP BY
+    EXTRACT(QUARTER FROM transaction_date),
+    product_category
+ORDER BY
+    quarter,
+    total_revenue DESC;
+					</code></pre>
+
+					<aside class="notes">
+						This query analyzes our quarterly revenue performance across different product categories.
+						It calculates total revenue, unique customer counts, and average revenue per customer.
+						The results show Q3 outperforming previous quarters with a 15% increase in revenue per customer.
+					</aside>
+				</section>
+
 				<!-- Strategic Outlook -->
 				<section>
 					<h2>Strategic Outlook</h2>
@@ -350,6 +383,47 @@ const dashboard = new RiskDashboard('risk-container');
 							<li class="fragment">$3.5B annual revenue target</li>
 							<li class="fragment">Industry-leading ESG scores</li>
 						</ul>
+						
+					<div class="fragment fade-in">
+						<h3>Brand Identity Styles</h3>
+						<pre><code class="css" data-trim data-noescape data-line-numbers="1-6|8-14|16-23|25-33">
+/* Core brand colors */
+:root {
+  --primary-color: #1f497d;
+  --secondary-color: #6c5ce7;
+  --accent-color: #00cec9;
+}
+
+/* Financial metrics styling */
+.financial-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+}
+
+/* Card components */
+.metric-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: white;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive adaptations */
+@media (max-width: 768px) {
+  .financial-dashboard {
+    grid-template-columns: 1fr;
+  }
+  
+  .metric-card {
+    margin-bottom: 1rem;
+  }
+}
+						</code></pre>
+					</div>
 					</div>
 
 					<aside class="notes">
@@ -360,6 +434,53 @@ const dashboard = new RiskDashboard('risk-container');
 					</aside>
 				</section>
 
+				<!-- Digital Experience Implementation -->
+				<section>
+					<h2>Digital Customer Experience</h2>
+					<p>UI implementation for our customer portal:</p>
+					
+					<pre><code class="html" data-trim data-noescape data-line-numbers="1-5|7-15|17-26|28-33">
+<div class="dashboard-container">
+  <header class="dashboard-header">
+    <h1>Financial Portfolio Dashboard</h1>
+    <div id="user-profile" class="user-profile"></div>
+  </header>
+  
+  <div class="metrics-container">
+    <div class="metric-card" id="total-assets">
+      <h3>Total Assets</h3>
+      <div class="metric-value">$0.00</div>
+      <div class="metric-chart">
+        <canvas id="assets-chart"></canvas>
+      </div>
+    </div>
+    
+    <div class="metric-card" id="portfolio-performance">
+      <h3>Portfolio Performance</h3>
+      <div class="metric-value">0.00%</div>
+      <div class="metric-status"></div>
+      <div class="metric-chart">
+        <canvas id="performance-chart"></canvas>
+      </div>
+      <div class="time-selector">
+        <button data-period="1w" class="active">1W</button>
+        <button data-period="1m">1M</button>
+        <button data-period="3m">3M</button>
+        <button data-period="1y">1Y</button>
+        <button data-period="all">All</button>
+      </div>
+    </div>
+  </div>
+</div>
+					</code></pre>
+
+					<aside class="notes">
+						This HTML structure shows our new digital customer experience portal. The responsive design
+						works across all devices and includes real-time portfolio tracking. Customer satisfaction
+						with the new interface has increased by 24% since launch.
+					</aside>
+				</section>
+				
 				<!-- Contact & Questions -->
 				<section>
 					<h2>Thank You</h2>
