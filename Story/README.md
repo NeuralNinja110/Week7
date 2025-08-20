@@ -105,6 +105,8 @@ By committing to this strategy, we can expect to see continuous improvement in e
 
 ---
 
-*Analysis performed using Python data analysis and visualization libraries, with assistance from LLM-powered tools (OpenRouter with model google/gemini-2.0-flash-exp:free).*
+*Analysis performed using Python data analysis and visualization libraries, with assistance from Jules (google-labs-jules) at https://chatgpt.com/codex/tasks*
+
+*Additional LLM assistance: OpenRouter with model google/gemini-2.0-flash-exp:free*
 
 *Date: August 20, 2025*
