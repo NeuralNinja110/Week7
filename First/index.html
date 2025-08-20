@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Quarterly Earnings Report - Q3 2025</title>
+		<title>Quarterly Earnings Report - Q3 2025 23f1001177@ds.study.iitm.ac.in</title>
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css">
@@ -47,6 +47,16 @@
 				background: #ffeb3b;
 				padding: 2px 5px;
 				border-radius: 3px;
+			}
+			.email-watermark {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				font-size: 12px;
+				color: #666;
+				z-index: 1000;
+				font-family: monospace;
+				opacity: 0.8;
 			}
 		</style>
 	</head>
@@ -428,6 +438,24 @@ const dashboard = new RiskDashboard('risk-container');
 				previewLinks: false,
 				viewDistance: 3,
 				display: 'block'
+			});
+			
+			// Add email to all slides
+			document.addEventListener('DOMContentLoaded', function() {
+				const email = "23f1001177@ds.study.iitm.ac.in";
+				const slides = document.querySelectorAll('.slides section');
+				
+				slides.forEach(function(slide) {
+					const emailDiv = document.createElement('div');
+					emailDiv.className = 'email-watermark';
+					
+					// Create paragraph element directly to avoid script injection issues
+					const paragraph = document.createElement('p');
+					paragraph.textContent = 'Prepared by: ' + email;
+					emailDiv.appendChild(paragraph);
+					
+					slide.appendChild(emailDiv);
+				});
 			});
 		</script>
 	</body>
